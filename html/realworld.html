@@ -187,11 +187,11 @@
 
 		</style>
         <!-- <link rel="stylesheet" href="css/style.css"> -->
-		<link rel="stylesheet" href="/css/realworld.css">
+		<link rel="stylesheet" href="./../css/realworld.css">
 	</head>
 	<body>
         <div id="image-overlay">
-			<img id="reallogo" src="/SVG/realworld.svg">
+			<img id="reallogo" src="./../SVG/realworld.svg">
 		</div>
         <button id="arrow-button">go to cafe → </button>
 		<div id="3d-container"></div>
@@ -205,18 +205,18 @@
 <e>
     <nav>
         <div id="close-button" onclick="closeNav()">×</div>
-        <a href="index.html" onclick="navigateToPage('index.html')">Home</a>
-        <a href="/html/custom.html" onclick="navigateToPage('custom.html')">Change Tokki's Color</a>
-        <a href="/html/citizen.html" onclick="navigateToPage('citizen.html')">Go to Citizen Card</a>
+        <a href="./../index.html" onclick="navigateToPage('index.html')">Home</a>
+        <a href="./../html/custom.html" onclick="navigateToPage('custom.html')">Change Tokki's Color</a>
+        <a href="./../html/citizen.html" onclick="navigateToPage('citizen.html')">Go to Citizen Card</a>
         <a href="#" onclick="showCreditPopup()">Credit</a>
     </nav>
 
     <div id="image-overlay">
-        <img id="reallogo" src="/SVG/realworld.svg">
+        <img id="reallogo" src="./../SVG/realworld.svg">
     </div>
 
     <div id="navigationlogo" onclick="showNavBar()">
-        <img src="/navigation_logo.png">
+        <img src="./../navigation_logo.png">
         <div id="option-text">Option</div>
     </div>
 
@@ -225,7 +225,7 @@
         <h2>Team 307호</h2>
     </div>
 </e>
-        <script type="module" src="/js/realworld.js"></script>
+        <script type="module" src="./../js/realworld.js"></script>
 		<script>
             document.addEventListener('DOMContentLoaded', (event) => {
                 const button = document.getElementById('arrow-button');
@@ -291,7 +291,7 @@
     // 클릭 이벤트 핸들러 추가
     function handlecClick() {
         // 이동하고자 하는 페이지로 이동하는 로직을 작성하세요
-        window.location.href = '/html/cyberworld.html';
+        window.location.href = './../html/cyberworld.html';
         console.log('Button clicked!');
     }
 </script>

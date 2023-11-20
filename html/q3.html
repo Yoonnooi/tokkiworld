@@ -101,36 +101,36 @@
         <div class="column">
             <div class="box" id="game">
                 <div class="background-box"></div>
-                <img src="/img/game.png" width="210">
+                <img src="./../img/game.png" width="210">
                 친구가 좋아하는 것 같이 하기
             </div>
             <div class="box" id="message">
                 <div class="background-box"></div>
-                <img src="/img/message.png" width="230">
+                <img src="./../img/message.png" width="230">
                 따뜻한 말로 위로해주기
             </div>
         </div>
         <div class="column">
             <div class="box" id="delivery">
                 <div class="background-box"></div>
-                <img src="/img/delivery.png" width="230">
+                <img src="./../img/delivery.png" width="230">
                 맛있는 음식 사주기
             </div>
             <div class="box" id="facetime">
                 <div class="background-box"></div>
-                <img src="/img/facetime.png" width="220">
+                <img src="./../img/facetime.png" width="220">
                 웃긴 얘기로 웃겨주기
             </div>
         </div>
     </div>
-    <img id="tokki" src="/SVG/brown_tokki.svg" width="100px" height="100px">
+    <img id="tokki" src="./../SVG/brown_tokki.svg" width="100px" height="100px">
     
     <script>
         document.addEventListener("DOMContentLoaded", function () {
         // "뒤로 가기" 이미지 클릭 시 이전 페이지로 이동
             const back_tokki = document.getElementById('tokki');
             back_tokki.addEventListener('click', function () {
-                window.location.href = "/html/q1.html"; 
+                window.location.href = "./../html/q1.html"; 
             });
         });
         const name = localStorage.getItem("name");
@@ -146,19 +146,19 @@
             
         document.getElementById("game").addEventListener("click", function () {
             localStorage.setItem("like", "게임하기");
-            window.location.href = "/html/citizen.html";
+            window.location.href = "./../html/citizen.html";
         });
         document.getElementById("message").addEventListener("click", function () {
             localStorage.setItem("like", "친구랑 깨톡하기");
-            window.location.href = "/html/citizen.html";
+            window.location.href = "./../html/citizen.html";
         });
         document.getElementById("delivery").addEventListener("click", function () {
             localStorage.setItem("like", "우리가 누구? 배달의 민족!");
-            window.location.href = "/html/citizen.html";
+            window.location.href = "./../html/citizen.html";
         });
         document.getElementById("facetime").addEventListener("click", function () {
             localStorage.setItem("like", "친구들과 페타로 놀기");
-            window.location.href = "/html/citizen.html";
+            window.location.href = "./../html/citizen.html";
         });
     </script>
 </body>

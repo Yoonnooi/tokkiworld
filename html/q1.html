@@ -102,29 +102,29 @@
         <div class="column">
             <div class="box" id="boong">
                 <div class="background-box"></div>
-                <img src="/img/boong1.png" width="200">
+                <img src="./../img/boong1.png" width="200">
                 붕어빵
             </div>
             <div class="box" id="tako">
                 <div class="background-box"></div>
-                <img src="/img/tako.png" width="210">
+                <img src="./../img/tako.png" width="210">
                 타코야끼
             </div>
         </div>
         <div class="column">
             <div class="box" id="goguma">
                 <div class="background-box"></div>
-                <img src="/img/goguma.png" width="190">
+                <img src="./../img/goguma.png" width="190">
                 군고구마
             </div>
             <div class="box" id="hotchoco">
                 <div class="background-box"></div>
-                <img src="/img/hotchoco1.png" width="210">
+                <img src="./../img/hotchoco1.png" width="210">
                 핫초코
             </div>
         </div>
     </div>
-    <img id="tokki" src="/SVG/brown_tokki.svg" width="100px" height="100px">
+    <img id="tokki" src="./../SVG/brown_tokki.svg" width="100px" height="100px">
     
     <script>
 
@@ -132,7 +132,7 @@
         // "뒤로 가기" 이미지 클릭 시 이전 페이지로 이동
             const back_tokki = document.getElementById('tokki');
             back_tokki.addEventListener('click', function () {
-                window.location.href = "/html/custom.html"; 
+                window.location.href = "./../html/custom.html"; 
             });
         });
         const name = localStorage.getItem("name");
@@ -144,19 +144,19 @@
         console.log(`name: ${name}, month, day: ${month, day}, hobbies: ${hobbies}, color: ${color}`);
         
         document.getElementById("boong").addEventListener("click", function () {
-            window.location.href = "/html/q2.html"; 
+            window.location.href = "./../html/q2.html"; 
             // 붕어빵은 realworld, q2는 realworld 관련 질문
         });
         document.getElementById("tako").addEventListener("click", function () {
-            window.location.href = "/html/q2.html";
+            window.location.href = "./../html/q2.html";
             // 타코야키 realworld, q2는 realworld 관련 질문
         });
         document.getElementById("goguma").addEventListener("click", function () {
-            window.location.href = "/html/q3.html";
+            window.location.href = "./../html/q3.html";
             // 고구마는 cyberworld, q3는 cyberworld 관련 질문
         });
         document.getElementById("hotchoco").addEventListener("click", function () {
-            window.location.href = "/html/q3.html";
+            window.location.href = "./../html/q3.html";
             // 핫초코는 cyberworld, q3는 cyberworld 관련 질문
         });
     </script>

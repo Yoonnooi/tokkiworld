@@ -109,36 +109,36 @@
         <div class="column">
             <div class="box" id="food">
                 <div class="background-box"></div>
-                <img src="/img/food.png" width="210">
+                <img src="./../img/food.png" width="210">
                 가고 싶었던 맛집 투어를 한다
             </div>
             <div class="box" id="talk">
                 <div class="background-box"></div>
-                <img src="/img/talk.png" width="220">
+                <img src="./../img/talk.png" width="220">
                 친한 친구를 만나서 수다를 떤다
             </div>
         </div>
         <div class="column">
             <div class="box" id="zoom">
                 <div class="background-box"></div>
-                <img src="/img/zoom.png" width="230">
+                <img src="./../img/zoom.png" width="230">
                 밀린 과제를 빨리 해치운다
             </div>
             <div class="box" id="board">
                 <div class="background-box"></div>
-                <img src="/img/board.png" width="230">
+                <img src="./../img/board.png" width="230">
                 취미 생활을 한다
             </div>
         </div>
     </div>
-    <img id="tokki" src="/SVG/brown_tokki.svg" width="100px" height="100px">
+    <img id="tokki" src="./../SVG/brown_tokki.svg" width="100px" height="100px">
     
     <script>
         document.addEventListener("DOMContentLoaded", function () {
         // "뒤로 가기" 이미지 클릭 시 이전 페이지로 이동
             const back_tokki = document.getElementById('tokki');
             back_tokki.addEventListener('click', function () {
-                window.location.href = "/html/q1.html"; 
+                window.location.href = "./../html/q1.html"; 
             });
         });
 
@@ -155,20 +155,20 @@
             
         document.getElementById("food").addEventListener("click", function () {
             localStorage.setItem("like", "맛있는 음식 먹기");
-            window.location.href = "/html/citizen.html";
+            window.location.href = "./../html/citizen.html";
             // "food" 라는 것도 넘기기 코드 작성 ! 
         });
         document.getElementById("talk").addEventListener("click", function () {
             localStorage.setItem("like", "친구들이랑 수다떨기");
-            window.location.href = "/html/citizen.html";
+            window.location.href = "./../html/citizen.html";
         });
         document.getElementById("zoom").addEventListener("click", function () {
             localStorage.setItem("like", "갓생 살기");
-            window.location.href = "/html/citizen.html";
+            window.location.href = "./../html/citizen.html";
         });
         document.getElementById("board").addEventListener("click", function () {
             localStorage.setItem("like", "워라밸 중요! 취미생활하기");
-            window.location.href = "/html/citizen.html";
+            window.location.href = "./../html/citizen.html";
         });
     </script>
 </body>
